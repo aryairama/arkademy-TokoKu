@@ -1,0 +1,47 @@
+.text-logo-ecommerce {
+    font-size: 28px;
+    color: #DB3022;
+    font-weight: bold;
+}
+
+.text-auth-warning {
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    color: #222222;
+}
+
+.mt-4_5 {
+    margin-top: 1.8rem;
+}
+
+.switch-roles-login>.nav>li>.nav-link.active {
+    color: white;
+    background-color: #DB3022;
+    border: 1px solid #DB3022;
+}
+
+.switch-roles-login>.nav>li>.nav-link {
+    border-radius: 0px;
+    color: #9B9B9B;
+    border: 1px solid #9B9B9B;
+}
+
+.text-forgot-password,
+.text-register {
+    color: #DB3022;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.btn-submit {
+    background-color: #DB3022;
+    color: white;
+}
+
+.btn-submit:hover {
+    color: #DB3022;
+    background-color: transparent;
+    border: 1px solid #DB3022;
+}

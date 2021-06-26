@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Metropolis-Regular;
+    src: url(../font/metropolis/Metropolis-Regular.otf);
+}
+
+body {
+    font-family: Metropolis-Regular;
+}
