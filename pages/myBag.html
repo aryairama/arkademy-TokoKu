@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoKu - Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asset/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/modalFilter.css">
+    <link rel="stylesheet" href="../asset/css/myBag.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-md navbar-light bg-white shadow">
+        <div class="container">
+            <div class="navbar-brand d-flex">
+                <img class="brand-ecommerce" src="../asset/img/icon/Vector.svg" alt="logo-app">
+                <p class="text-logo-ecommerce mb-n5 pt-2 ps-1">TokoKu</p>
+            </div>
+            <button class="navbar-toggler btn-sm btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-ecommerce" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-ecommerce">
+                <div class="row flex-grow-1 mt-md-2 mt-4">
+                    <div class="col-md-6 col-lg-6 col-12 mb-md-0 mb-3">
+                        <div class="row flex-grow-1">
+                            <div class="col-sm-10 col-9">
+                                <div class="input-group input-group-sm home-seacrh rounded-pill">
+                                    <input type="text" class="form-control border-end-0 rounded-pill-start">
+                                    <span class="input-group-text bg-white border-start-0 rounded-pill-end"><i
+                                            class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-3 d-flex">
+                                <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-prouct"
+                                    data-bs-toggle="modal"><img src="../asset/img/icon/filter.svg"
+                                        alt="icon-filter"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="row flex-grow-1 flex-wrap">
+                            <div
+                                class="offset-md-2 col-10 d-flex justify-content-md-end justify-content-start align-items-center">
+                                <a href="./myBag.html" class="btn-icon mx-3">
+                                    <img src="../asset/img/icon/keranjang.svg" alt="icon-chart">
+                                </a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/lonceng.svg"
+                                        alt="icon-bell"></a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/mail.svg"
+                                        alt="icon-mail"></a>
+                                <a href="./myBag.html" class="mx-3"><img class="rounded-circle"
+                                        src="../asset/img/profile/christian-buehner-DItYlc26zVI-unsplash 1.png"
+                                        alt="icon-profile"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- chart produk -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="header-product ms-0">My bag</p>
+            </div>
+            <div class="col-md-8">
+                <div class="card card-body shadow-sm mb-2">
+                    <div class="d-flex flex-wrap justify-content-between align-items-between">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input form-check-product" id="selectAllProduct"
+                                checked>
+                            <label class="form-check-label card-product-title" for="selectAllProduct">Select all item
+                                <label for="selectAllProduct" class="text-black-50">(2 items selected)</label>
+                            </label>
+                        </div>
+                        <span class="text-orange">Delete</span>
+                    </div>
+                </div>
+                <!-- start myBag -->
+                <div class="card card-body shadow-sm my-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-7 col-lg-8 d-flex flex-wrap align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input form-check-product" id="product1">
+                            </div>
+                            <img class="img-mybag-product rounded-3"
+                                src="../asset/img/product/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.jpg"
+                                alt="logo-product">
+                            <div class="mybag-product-header ms-3">
+                                <p class="card-product-title">Men's formal suit - Black</p>
+                                <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 d-flex flex-wrap justify-content-start mt-md-0 mt-3">
+                            <button class="btn-decrement-product"
+                                onclick="document.querySelector('#quantity1').stepDown()">&#9866;</button>
+                            <input type="number" class="form-control-quantity" min="0" readonly id="quantity1"
+                                value="1">
+                            <button class="btn-increment-product"
+                                onclick="document.querySelector('#quantity1').stepUp()">+</button>
+                        </div>
+                        <div class="col-6 col-md-2 col-lg-2 d-flex flex-wrap justify-content-end ">
+                            <span class="card-product-title fw-bold">$ 20.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body shadow-sm my-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-7 col-lg-8 d-flex flex-wrap align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input form-check-product" id="product1">
+                            </div>
+                            <img class="img-mybag-product rounded-3"
+                                src="../asset/img/product/kemal-alkan-_BDBEP0ePQc-unsplash 1.png"
+                                alt="logo-product">
+                            <div class="mybag-product-header ms-3">
+                                <p class="card-product-title">Men's Jacket jeans</p>
+                                <p class="card-product-brand mt-n3">Zalora Cloth</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 d-flex flex-wrap justify-content-start mt-md-0 mt-3">
+                            <button class="btn-decrement-product"
+                                onclick="document.querySelector('#quantity2').stepDown()">&#9866;</button>
+                            <input type="number" class="form-control-quantity" min="0" readonly id="quantity2"
+                                value="1">
+                            <button class="btn-increment-product"
+                                onclick="document.querySelector('#quantity2').stepUp()">+</button>
+                        </div>
+                        <div class="col-6 col-md-2 col-lg-2 d-flex flex-wrap justify-content-end ">
+                            <span class="card-product-title fw-bold">$ 20.0</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- start myBag -->
+            </div>
+            <div class="col-md-4">
+                <div class="card card-body shadow-sm mt-md-0 mt-4">
+                    <p class="card-product-title fw-bold">Shopping summary</p>
+                    <div class="d-flex justify-content-between">
+                        <p class="card-product-title text-black-50">Total price</p>
+                        <p class="shopping-summary-total-price">$ 40.0</p>
+                    </div>
+                    <button class="btn btn-orange rounded-pill">Buy</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- chart produk -->
+    <!-- Modal filter -->
+    <div class="modal fade" id="filter-prouct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start">
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal"><img
+                            src="../asset/img/icon/close.svg" alt="icon-close-filter"></button>
+                    <h5 class="modal-title ms-2 mt-1" id="staticBackdropLabel">Filter</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-colors">
+                        <p class="filter-title">Colors</p>
+                        <div class="d-flex flex-wrap justify-content-start">
+                            <input type="checkbox" class="btn-check" id="color1" autocomplete="off">
+                            <label for="color1" class="btn btn-outline-rounded-black me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color2" autocomplete="off">
+                            <label for="color2" class="btn btn-outline-rounded-white shadow me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color3" autocomplete="off">
+                            <label for="color3" class="btn btn-outline-rounded-red me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color4" autocomplete="off">
+                            <label for="color4" class="btn btn-outline-rounded-pink me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color5" autocomplete="off">
+                            <label for="color5" class="btn btn-outline-rounded-brown me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color6" autocomplete="off">
+                            <label for="color6" class="btn btn-outline-rounded-blue me-2"></label>
+                        </div>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                    <div class="filter-size">
+                        <p class="filter-title">Size</p>
+                        <div class="d-flex flex-wrap justify-content-start">
+                            <input type="checkbox" class="btn-check" id="size1" autocomplete="off">
+                            <label for="size1" class="btn btn btn-outline-orange me-2">XS</label>
+                            <input type="checkbox" class="btn-check" id="size2" autocomplete="off">
+                            <label for="size2" class="btn btn btn-outline-orange me-2">S</label>
+                            <input type="checkbox" class="btn-check" id="size3" autocomplete="off">
+                            <label for="size3" class="btn btn btn-outline-orange me-2">M</label>
+                            <input type="checkbox" class="btn-check" id="size4" autocomplete="off">
+                            <label for="size4" class="btn btn btn-outline-orange me-2">L</label>
+                            <input type="checkbox" class="btn-check" id="size5" autocomplete="off">
+                            <label for="size5" class="btn btn btn-outline-orange me-2">XL</label>
+                        </div>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                    <div class="filter-category">
+                        <p class="filter-title">Category</p>
+                        <div class="d-flex flex-wrap justify-content-start">
+                            <input type="checkbox" class="btn-check" id="category1" autocomplete="off">
+                            <label for="category1" class="btn btn btn-outline-orange me-2">All</label>
+                            <input type="checkbox" class="btn-check" id="category2" autocomplete="off">
+                            <label for="category2" class="btn btn btn-outline-orange me-2">Women</label>
+                            <input type="checkbox" class="btn-check" id="category3" autocomplete="off">
+                            <label for="category3" class="btn btn btn-outline-orange me-2">Men</label>
+                            <input type="checkbox" class="btn-check" id="category4" autocomplete="off">
+                            <label for="category4" class="btn btn btn-outline-orange me-2">Boys</label>
+                            <input type="checkbox" class="btn-check" id="category5" autocomplete="off">
+                            <label for="category5" class="btn btn btn-outline-orange me-2">Girls</label>
+                        </div>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                    <div class="filter-brand">
+                        <p class="filter-title">Brand</p>
+                        <select name="brand" id="brand" class="form-select">
+                            <option value="adidas">adidas Originals, Jack & Jones, s.Oliver</option>
+                            <option value="adidas">adidas Originals, Jack & Jones, s.Oliver</option>
+                        </select>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                </div>
+                <div class="modal-footer justify-content-around m-0">
+                    <button type="button" class="btn btn-sm btn-outline-orange rounded-pill w-40"
+                        data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-sm btn-outline-orange rounded-pill w-40">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal filter -->
+    <script src="../asset/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

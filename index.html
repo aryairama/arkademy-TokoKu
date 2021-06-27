@@ -10,6 +10,7 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/css/bootstrap.css">
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/modalFilter.css">
 </head>
 
 <body>
@@ -39,23 +40,21 @@
                                 <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-prouct"
                                     data-bs-toggle="modal"><img src="./asset/img/icon/filter.svg"
                                         alt="icon-filter"></button>
-                                <button class="btn-chart d-md-none d-block"><img src="./asset/img/icon/keranjang.svg"
-                                        alt="icon-chart"></button>
+                                <a href="./pages/myBag.html" class="btn-icon d-md-none d-block"><img src="./asset/img/icon/keranjang.svg"
+                                        alt="icon-chart"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-12">
                         <div class="row flex-grow-1">
                             <div class="offset-4 col-2 d-none d-md-block">
-                                <button class="btn-chart ms-lg-4">
+                                <a href="./pages/myBag.html" class="btn-icon ms-lg-4">
                                     <img src="./asset/img/icon/keranjang.svg" alt="">
-                                </button>
+                                </a>
                             </div>
-                            <div class="col-md-6 col-8 d-flex button-auth">
-                                <button class="btn btn-sm btn-outline-warning rounded-pill w-50 me-3"><a
-                                        class="text-decoration-none" href="./auth/login.html">Login</a></button>
-                                <button class="btn btn-sm btn-outline-warning rounded-pill w-50"><a
-                                        class="text-decoration-none" href="./auth/register.html">Signup</a></button>
+                            <div class="col-md-6 col-8 d-flex">
+                                <a href="./auth/login.html" class="btn btn-sm button-auth rounded-pill w-50 me-3">Login</a>
+                                <a href="./auth/register.html" class="btn btn-sm button-auth rounded-pill w-50">Signup</a>
                             </div>
                         </div>
                     </div>
