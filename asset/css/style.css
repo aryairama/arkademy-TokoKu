@@ -124,7 +124,11 @@ body {
 }
 
 .text-orange {
-    color: #DB3022;
+    color: #DB3022 !important;
+}
+
+.text-black {
+    color: #000000 !important;
 }
 
 /* Home/index */
@@ -187,7 +191,14 @@ body {
 
 .card-product-title {
     font-size: 16px;
+    text-decoration: none;
+    color: black;
 }
+
+.card-product-title:hover{
+    color: black;
+}
+
 
 .card-product-price {
     font-size: 16px;
@@ -204,7 +215,6 @@ body {
     display: flex;
     list-style-type: none;
 }
-
 
 
 /* Modal Filter */

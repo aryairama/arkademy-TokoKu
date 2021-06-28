@@ -139,6 +139,50 @@
     border: 1px solid white;
 }
 
+.btn-check:checked+.btn-outline-rounded-light-blue,
+.btn-check:active+.btn-outline-rounded-light-blue,
+.btn-outline-rounded-light-blue:active,
+.btn-outline-rounded-light-blue.active {
+    box-shadow: none;
+    border: 4px solid white;
+    outline: 1px solid #DB3022;
+}
+
+.btn-outline-rounded-light-blue:hover {
+    border: 4px solid white;
+    outline: 1px solid #DB3022;
+}
+
+.btn-outline-rounded-light-blue {
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #4290D8;
+    border: 1px solid white;
+}
+
+.btn-check:checked+.btn-outline-rounded-light-green,
+.btn-check:active+.btn-outline-rounded-light-green,
+.btn-outline-rounded-light-green:active,
+.btn-outline-rounded-light-green.active {
+    box-shadow: none;
+    border: 4px solid white;
+    outline: 1px solid #DB3022;
+}
+
+.btn-outline-rounded-light-green:hover {
+    border: 4px solid white;
+    outline: 1px solid #DB3022;
+}
+
+.btn-outline-rounded-light-green {
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #42D86C;
+    border: 1px solid white;
+}
+
 
 .btn-check:checked+.btn-outline-orange,
 .btn-check:active+.btn-outline-orange,
@@ -149,3 +193,15 @@
     border: 1px solid #DB3022;
     background-color: #DB3022;
 }
+
+.btn-outline-orange:hover {
+    border: 1px solid #DB3022;
+    color: #ffffff;
+    background-color: #DB3022;
+}
+
+.btn-outline-orange {
+    border: 1px solid #9B9B9B;
+    color: #9B9B9B;
+}
+
