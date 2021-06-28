@@ -132,7 +132,8 @@
                         <p class="card-product-title fw-bold">Shopping summary</p>
                         <p class="shopping-summary-total-price text-orange lh-1">$ 45.0</p>
                     </div>
-                    <button class="btn btn-orange rounded-pill">Select payment</button>
+                    <button class="btn btn-orange rounded-pill" data-bs-target="#payment-method"
+                        data-bs-toggle="modal">Select payment</button>
                 </div>
             </div>
         </div>
@@ -233,6 +234,86 @@
         </div>
     </div>
     <!-- Modal add new address -->
+    <!-- Modal payment -->
+    <div class="modal fade" id="payment-method" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start">
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal"><img
+                            src="../asset/img/icon/close.svg" alt="icon-close-filter"></button>
+                    <h5 class="modal-title ms-2 mt-1" id="staticBackdropLabel">Payment</h5>
+                </div>
+                <div class="modal-body  px-5" style="min-height: 70vh;">
+                    <p class="font-semi-bold">Payment method</p>
+                    <div class="payment-methods d-flex flex-wrap flex-column">
+                        <div class="payment-gopay row justify-content-around py-2">
+                            <div class="col-4">
+                                <img src="../asset/img/payment_method/gopay.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <p class="font-semi-bold">Gopay</p>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input form-check-input-payment" value="gopay"
+                                        name="payment_method">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-gopay row justify-content-around py-2">
+                            <div class="col-4">
+                                <img src="../asset/img/payment_method/pos_indo.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <p class="font-semi-bold">Pos Indonesia</p>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input form-check-input-payment"
+                                        value="pos_ndonesia" name="payment_method">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-gopay row justify-content-around py-2">
+                            <div class="col-4">
+                                <img src="../asset/img/payment_method/mastercard.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <p class="font-semi-bold">Mastercard</p>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input form-check-input-payment"
+                                        value="mastercard" name="payment_method">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider-filter">
+                    <div class="shooping-summary d-flex flex-column flex-wrap">
+                        <p class="card-product-title fw-bold">Shopping summary</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-product-title text-black-50 lh-1">Order</p>
+                            <p class="shopping-summary-total-price lh-1">$ 40.0</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-product-title text-black-50 lh-1">Delivery</p>
+                            <p class="shopping-summary-total-price lh-1">$ 5.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-around">
+                    <div class="shopping-summary d-flex flex-column flex-wrap">
+                        <div class="text-black-16px fw-bold">Shopping summary</div>
+                        <div class="text-black-16px text-orange fw-bold">$ 45.0</div>
+                    </div>
+                    <button class="btn btn-orange rounded-pill w-40">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal payment -->
     <!-- Modal filter -->
     <div class="modal fade" id="filter-prouct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">

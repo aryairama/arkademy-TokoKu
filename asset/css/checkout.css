@@ -8,8 +8,9 @@
     width: 103px;
     height: 69px;
 }
+
 /* checkout address */
-.add-new-address{
+.add-new-address {
     border: 1px dashed #9B9B9B;
 }
 
@@ -17,11 +18,14 @@
     border: 1px solid #DB3022;
 }
 
-#primary_address:checked {
+#primary_address:checked,
+.form-check-input-payment:checked {
     background-color: #DB3022;
 }
 
-#primary_address:focus {
+#primary_address:focus,
+.form-check-input-payment:focus {
     box-shadow: none;
 }
+
 /* checkout address */
