@@ -10,8 +10,31 @@ body {
 
 
 /* media */
+
+.text-black-16px {
+    font-size: 16px;
+    color: #222222;
+}
+
+.text-black-14px {
+    font-size: 14px;
+    color: #222222;
+}
+
+.text-black-24px {
+    font-size: 24px;
+    color: #222222;
+}
+
+.font-semi-bold {
+    font-weight: bolder;
+}
+
 .w-40 {
     width: 40%;
+}
+.w-30 {
+    width: 30%;
 }
 
 .mt-4_5 {

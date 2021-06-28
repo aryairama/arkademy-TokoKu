@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TokoKu - MyBag</title>
+    <title>TokoKu - Checkout</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="../asset/css/bootstrap.css">
     <link rel="stylesheet" href="../asset/css/style.css">
     <link rel="stylesheet" href="../asset/css/modalFilter.css">
-    <link rel="stylesheet" href="../asset/css/myBag.css">
+    <link rel="stylesheet" href="../asset/css/checkout.css">
 </head>
 
 <body>
@@ -69,72 +69,47 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <p class="header-product ms-0">My bag</p>
+                <p class="header-product ms-0">Checkout</p>
+                <p>Shipping Adress</p>
             </div>
             <div class="col-md-8">
                 <div class="card card-body shadow-sm mb-2">
-                    <div class="d-flex flex-wrap justify-content-between align-items-between">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input form-check-product" id="selectAllProduct"
-                                checked>
-                            <label class="form-check-label card-product-title" for="selectAllProduct">Select all item
-                                <label for="selectAllProduct" class="text-black-50">(2 items selected)</label>
-                            </label>
-                        </div>
-                        <span class="text-orange">Delete</span>
+                    <p class="text-black-16px font-semi-bold">Andreas Jane</p>
+                    <p class="text-black-14px mt-n2">Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten
+                        Banyumas, Jawa Tengah, 53181
+                        [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181</p>
+                    <div class="button-action">
+                        <button class="btn rounded-pill btn-outline-orange" data-bs-target="#choose-another-address"
+                            data-bs-toggle="modal">Choose another address</button>
                     </div>
                 </div>
                 <!-- start myBag -->
                 <div class="card card-body shadow-sm my-2">
                     <div class="row align-items-center">
-                        <div class="col-12 col-md-7 col-lg-7 d-flex flex-wrap align-items-center">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input form-check-product" id="product1">
-                            </div>
-                            <img class="img-mybag-product rounded-3"
-                                src="../asset/img/product/1.jpg"
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-8 d-flex flex-wrap align-items-center">
+                            <img class="img-mybag-product rounded-3 me-2" src="../asset/img/product/1.jpg"
                                 alt="logo-product">
-                            <div class="mybag-product-header ms-3">
+                            <div class="mybag-product-header">
                                 <p class="card-product-title">Men's formal suit - Black</p>
                                 <p class="card-product-brand mt-n3">Zalora Cloth</p>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 col-lg-3 d-flex flex-wrap justify-content-start mt-md-0 mt-3">
-                            <button class="btn-decrement-product"
-                                onclick="document.querySelector('#quantity1').stepDown()">&#9866;</button>
-                            <input type="number" class="form-control-quantity" min="0" readonly id="quantity1"
-                                value="1">
-                            <button class="btn-increment-product"
-                                onclick="document.querySelector('#quantity1').stepUp()">+</button>
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-2 d-flex flex-wrap justify-content-end ">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex flex-wrap justify-content-end">
                             <span class="card-product-title fw-bold">$ 20.0</span>
                         </div>
                     </div>
                 </div>
                 <div class="card card-body shadow-sm my-2">
                     <div class="row align-items-center">
-                        <div class="col-12 col-md-7 col-lg-7 d-flex flex-wrap align-items-center">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input form-check-product" id="product1">
-                            </div>
-                            <img class="img-mybag-product rounded-3"
-                                src="../asset/img/product/1.jpg"
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-8 d-flex flex-wrap align-items-center">
+                            <img class="img-mybag-product rounded-3 me-2" src="../asset/img/product/2.png"
                                 alt="logo-product">
-                            <div class="mybag-product-header ms-3">
+                            <div class="mybag-product-header">
                                 <p class="card-product-title">Men's Jacket jeans</p>
                                 <p class="card-product-brand mt-n3">Zalora Cloth</p>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 col-lg-3 d-flex flex-wrap justify-content-start mt-md-0 mt-3">
-                            <button class="btn-decrement-product"
-                                onclick="document.querySelector('#quantity2').stepDown()">&#9866;</button>
-                            <input type="number" class="form-control-quantity" min="0" readonly id="quantity2"
-                                value="1">
-                            <button class="btn-increment-product"
-                                onclick="document.querySelector('#quantity2').stepUp()">+</button>
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-2 d-flex flex-wrap justify-content-end ">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex flex-wrap justify-content-end">
                             <span class="card-product-title fw-bold">$ 20.0</span>
                         </div>
                     </div>
@@ -145,16 +120,119 @@
                 <div class="card card-body shadow-sm mt-md-0 mt-4">
                     <p class="card-product-title fw-bold">Shopping summary</p>
                     <div class="d-flex justify-content-between">
-                        <p class="card-product-title text-black-50">Total price</p>
-                        <p class="shopping-summary-total-price">$ 40.0</p>
+                        <p class="card-product-title text-black-50 lh-1">Order</p>
+                        <p class="shopping-summary-total-price lh-1">$ 40.0</p>
                     </div>
-                    <a href="./checkout.html" class="btn btn-orange rounded-pill">Buy</a>
+                    <div class="d-flex justify-content-between">
+                        <p class="card-product-title text-black-50 lh-1">Delivery</p>
+                        <p class="shopping-summary-total-price lh-1">$ 5.0</p>
+                    </div>
+                    <hr class="border-secondary mt-0">
+                    <div class="d-flex justify-content-between">
+                        <p class="card-product-title fw-bold">Shopping summary</p>
+                        <p class="shopping-summary-total-price text-orange lh-1">$ 45.0</p>
+                    </div>
+                    <button class="btn btn-orange rounded-pill">Select payment</button>
                 </div>
             </div>
         </div>
 
     </div>
     <!-- chart produk -->
+    <!-- Modal Choose another address -->
+    <div class="modal fade" id="choose-another-address" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end">
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal"><img
+                            src="../asset/img/icon/close.svg" alt="icon-close-filter"></button>
+                </div>
+                <div class="modal-body px-5" style="min-height: 70vh;">
+                    <div class="d-flex flex-wrap flex-column align-items-center">
+                        <div class="text-black-24px fw-bold mt-n3">Choose another address</div>
+                        <div class="add-new-address d-flex flex-wrap w-100 justify-content-center rounded-3 py-2 mt-3">
+                            <div class="text-black-50">Add new address</div>
+                        </div>
+                        <div class="list-address mt-4 p-3 rounded-3">
+                            <p class="text-black-16px font-semi-bold">Andreas Jane</p>
+                            <p class="text-black-14px mt-n2">Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja,
+                                Kabupaten
+                                Banyumas, Jawa Tengah, 53181
+                                [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181</p>
+                            <span class="text-orange">Delete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Choose another address -->
+    <!-- Modal add new address -->
+    <div class="modal fade" id="add-new-address" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end">
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal"><img
+                            src="../asset/img/icon/close.svg" alt="icon-close-filter"></button>
+                </div>
+                <div class="modal-body px-5" style="min-height: 70vh;">
+                    <div class="text-black-24px fw-bold text-center mb-3">Add new address</div>
+                    <div class="row">
+                        <div class="col-md-12 col-12 mb-3">
+                            <label for="full_address" class="text-black-14px text-black-50 mt-n4">Save address as (ex :
+                                home address, office address)</label>
+                            <input type="text" class="form-control" name="full_address" id="full_address"
+                                placeholder="Rumah">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="name" class="text-black-14px text-black-50">Recipient’s name</label>
+                                <input type="text" class="form-control" name="name" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="text-black-14px text-black-50">Address</label>
+                                <input type="text" class="form-control" name="address" id="address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="city_or_ubdistrict" class="text-black-14px text-black-50">City or
+                                    Subdistrict</label>
+                                <input type="text" class="form-control" name="city_or_ubdistrict"
+                                    id="city_or_ubdistrict">
+                            </div>
+                            <div class="form-check d-lg-block d-none">
+                                <input class="form-check-input" type="checkbox" value="true" id="primary_address">
+                                <label class="form-check-label text-black-14px text-black-50" for="primary_address">Make
+                                    it the primary address</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="phone_number" class="text-black-14px text-black-50">Recipient's telephone
+                                    number</label>
+                                <input type="text" class="form-control" name="phone_number" id="phone_number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="postal_code" class="text-black-14px text-black-50">Postal code</label>
+                                <input type="text" class="form-control" name="postal_code" id="postal_code">
+                            </div>
+                            <div class="form-check d-lg-none d-block">
+                                <input class="form-check-input" type="checkbox" value="true" id="primary_address">
+                                <label class="form-check-label text-black-14px text-black-50" for="primary_address">Make
+                                    it the primary address</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-end mb-3">
+                    <button class="btn button-auth rounded-pill w-25" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-orange rounded-pill w-25">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add new address -->
     <!-- Modal filter -->
     <div class="modal fade" id="filter-prouct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -235,6 +313,15 @@
     </div>
     <!-- Modal filter -->
     <script src="../asset/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        const modalAddNewAddress = new bootstrap.Modal($("#add-new-address"))
+        const modalChooseAnotheAddress = new bootstrap.Modal($("#choose-another-address"))
+        $(".add-new-address").on("click", function () {
+            modalAddNewAddress.show()
+            modalChooseAnotheAddress.hide()
+        })
+    </script>
 </body>
 
 </html>
