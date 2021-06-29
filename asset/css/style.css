@@ -21,6 +21,11 @@ body {
     color: #222222;
 }
 
+.text-black-20px {
+    font-size: 20px;
+    color: #222222;
+}
+
 .text-black-24px {
     font-size: 24px;
     color: #222222;
@@ -134,12 +139,20 @@ body {
     background: #1C3391;
 }
 
+.bg-light-blue {
+    background-color: #456BF3;
+}
+
 .bg-green {
     background: #57CD9E;
 }
 
 .bg-orange {
     background: #F67B02;
+}
+
+.bg-dark-orange {
+    background: #F36F45;
 }
 
 .bg-pink {

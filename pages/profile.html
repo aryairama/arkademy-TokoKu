@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoKu - Profile</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asset/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/modalFilter.css">
+    <link rel="stylesheet" href="../asset/css/profile.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border shadow-sm">
+        <div class="container">
+            <div class="navbar-brand d-flex justify-content-end center-logo-sidebar">
+                <div class="text-logo-ecommerce mt-1">
+                    <img class="brand-ecommerce mt-n2" src="../asset/img/icon/Vector.svg" alt="logo-app">TokoKu
+                </div>
+            </div>
+            <button class="navbar-toggler border btn-sm btn  sidebar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler border btn-sm btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-ecommerce" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-ecommerce">
+                <div class="row flex-grow-1 mt-md-2 mt-4">
+                    <div class="col-md-6 col-lg-6 col-12 mb-md-0 mb-3">
+                        <div class="row flex-grow-1">
+                            <div class="col-sm-10 col-9">
+                                <div class="input-group input-group-sm home-seacrh rounded-pill">
+                                    <input type="text" class="form-control border-end-0 rounded-pill-start">
+                                    <span class="input-group-text bg-white border-start-0 rounded-pill-end"><i
+                                            class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-3 d-flex">
+                                <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-prouct"
+                                    data-bs-toggle="modal"><img src="../asset/img/icon/filter.svg"
+                                        alt="icon-filter"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="row flex-grow-1 flex-wrap">
+                            <div
+                                class="offset-md-2 col-10 d-flex justify-content-md-end justify-content-start align-items-center">
+                                <a href="./myBag.html" class="btn-icon mx-3">
+                                    <img src="../asset/img/icon/keranjang.svg" alt="icon-chart">
+                                </a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/lonceng.svg"
+                                        alt="icon-bell"></a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/mail.svg"
+                                        alt="icon-mail"></a>
+                                <a href="#" class="mx-3"><img class="rounded-circle profile sidebar-toggler d-block"
+                                        src="../asset/img/profile/1.png" alt="icon-profile"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main content -->
+    <div class="d-flex wrapper flex-nowrap">
+        <aside class="sidebar ps-5 flex-column">
+            <div class="user-profile d-flex flex-wrap mb-5">
+                <img src="../asset/img/profile/1.png" class="user-profile-img" alt="user-profile-img">
+                <div class="d-flex flex-column ps-3 pt-1">
+                    <div class="text-black-16px font-semi-bold">Johanes Mikael</div>
+                    <div class="text-black-14px text-black-50"><img src="../asset/img/icon/pensil.svg" alt=""> Ubah
+                        profile</div>
+                </div>
+            </div>
+            <div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#submenu1" class="d-flex align-items-center" data-bs-toggle="collapse">
+                            <div class="sidebar-menu-icon-background bg-light-blue">
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/user.svg" alt="">
+                            </div> My account
+                        </a>
+                        <ul class="sidebar-submenu collapse" id="submenu1">
+                            <li>
+                                <a href="#">Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center text-black-50">
+                            <div class="sidebar-menu-icon-background bg-dark-orange">
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/map.svg" alt="">
+                            </div> Shipping Adrress
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center text-black-50">
+                            <div class="sidebar-menu-icon-background bg-pink">
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/clipboard.svg" alt="">
+                            </div> My Order
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main-panel">
+            <!-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow border-start">
+                <div class="container">
+                    <div class="navbar-brand d-flex">
+                        <img class="brand-ecommerce" src="../asset/img/icon/Vector.svg" alt="logo-app">
+                        <p class="text-logo-ecommerce mb-n5 pt-2 ps-1">TokoKu</p>
+                    </div>
+                    <button class="navbar-toggler btn-sm btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-ecommerce" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-ecommerce">
+                        <div class="row flex-grow-1 mt-md-2 mt-4">
+                            <div class="col-md-6 col-lg-6 col-12 mb-md-0 mb-3">
+                                <div class="row flex-grow-1">
+                                    <div class="col-sm-10 col-9">
+                                        <div class="input-group input-group-sm home-seacrh rounded-pill">
+                                            <input type="text" class="form-control border-end-0 rounded-pill-start">
+                                            <span class="input-group-text bg-white border-start-0 rounded-pill-end"><i
+                                                    class="fas fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 col-3 d-flex">
+                                        <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-prouct"
+                                            data-bs-toggle="modal"><img src="../asset/img/icon/filter.svg"
+                                                alt="icon-filter"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-12">
+                                <div class="row flex-grow-1 flex-wrap">
+                                    <div
+                                        class="offset-md-2 col-10 d-flex justify-content-md-end justify-content-start align-items-center">
+                                        <a href="./myBag.html" class="btn-icon mx-3">
+                                            <img src="../asset/img/icon/keranjang.svg" alt="icon-chart">
+                                        </a>
+                                        <a href="./myBag.html" class="btn-icon mx-3"><img
+                                                src="../asset/img/icon/lonceng.svg" alt="icon-bell"></a>
+                                        <a href="./myBag.html" class="btn-icon mx-3"><img
+                                                src="../asset/img/icon/mail.svg" alt="icon-mail"></a>
+                                        <a href="#" class="mx-3"><img class="rounded-circle profile"
+                                                src="../asset/img/profile/1.png"
+                                                alt="icon-profile"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav> -->
+            <div id="main-content" class="pt-5 ">
+                <section class="container">
+                    <div class="card rounded-3 shadow">
+                        <div class="card-body">
+                            <div class="text-black-20px fw-bold">My Profile</div>
+                            <div class="text-black-14px text-black-50">Manage your profile information</div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-12 col-12 order-lg-0 order-1">
+                                    <div class="row mb-3">
+                                        <label for="name" class="col-sm-3 col-form-label text-black-50">Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                value="Johanes Mikael">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="email" class="col-sm-3 col-form-label text-black-50">email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                value="johanes@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="phone_number" class="col-sm-3 col-form-label text-black-50">Phone
+                                            number</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="phone_number"
+                                                name="phone_number" value="08901289012">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="gender" class="col-sm-3 col-form-label text-black-50">Gender</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check-inline">
+                                                <input type="radio" class="form-check-input" id="laki-laki"
+                                                    name="gender" value="Laki-laki">
+                                                <label for="laki-laki" class="form-check-label">Laki-laki</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input type="radio" class="form-check-input" id="perempuan"
+                                                    name="gender" value="Perempuan">
+                                                <label for="perempuan" class="form-check-label">Perempuan</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="phone_number" class="col-sm-3 col-form-label text-black-50">Date of
+                                            birth</label>
+                                        <div class="col-sm-3">
+                                            <select name="day" id="days" class="form-select">
+                                                <option value="1" class="">1</option>
+                                                <option value="2" class="">2</option>
+                                                <option value="3" class="">3</option>
+                                                <option value="4" class="">4</option>
+                                                <option value="5" class="">5</option>
+                                                <option value="6" class="">6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select name="month" id="month" class="form-select">
+                                                <option value="januari">januari</option>
+                                                <option value="februari">februari</option>
+                                                <option value="maret">maret</option>
+                                                <option value="april">april</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select name="year" id="year" class="form-select">
+                                                <option value="1990">1990</option>
+                                                <option value="1991">1991</option>
+                                                <option value="1992">1992</option>
+                                                <option value="1993">1993</option>
+                                                <option value="1994">1994</option>
+                                                <option value="1995">1995</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-5">
+                                        <div class="offset-3 col-9"><button type="submit" class="btn btn-orange rounded-pill px-5">Save</button></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-12 order-lg-0 order-0 d-flex flex-wrap justify-content-evenly">
+                                    <hr class="d-lg-block d-none" width="1" size="150">
+                                    <div class="d-flex flex-wrap flex-column align-items-center pb-3">
+                                        <img class=" rounded-circle" src="../asset/img/profile/current_profile.png"
+                                            width="110px" height="110px" alt="current-profile">
+                                        <button class="btn btn-outline-orange rounded-pill mt-2">Select image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- main content -->
+    <!-- Modal filter -->
+    <div class="modal fade" id="filter-prouct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-start">
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal"><img
+                            src="../asset/img/icon/close.svg" alt="icon-close-filter"></button>
+                    <h5 class="modal-title ms-2 mt-1" id="staticBackdropLabel">Filter</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-colors">
+                        <p class="filter-title">Colors</p>
+                        <div class="d-flex flex-wrap justify-content-start">
+                            <input type="checkbox" class="btn-check" id="color1" autocomplete="off">
+                            <label for="color1" class="btn btn-outline-rounded-black me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color2" autocomplete="off">
+                            <label for="color2" class="btn btn-outline-rounded-white shadow me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color3" autocomplete="off">
+                            <label for="color3" class="btn btn-outline-rounded-red me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color4" autocomplete="off">
+                            <label for="color4" class="btn btn-outline-rounded-pink me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color5" autocomplete="off">
+                            <label for="color5" class="btn btn-outline-rounded-brown me-2"></label>
+                            <input type="checkbox" class="btn-check" id="color6" autocomplete="off">
+                            <label for="color6" class="btn btn-outline-rounded-blue me-2"></label>
+                        </div>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                    <div class="filter-size">
+                        <p class="filter-title">Size</p>
+                        <div class="d-flex flex-wrap justify-content-start">
+                            <input type="checkbox" class="btn-check" id="size1" autocomplete="off">
+                            <label for="size1" class="btn btn btn-outline-orange me-2">XS</label>
+                            <input type="checkbox" class="btn-check" id="size2" autocomplete="off">
+                            <label for="size2" class="btn btn btn-outline-orange me-2">S</label>
+                            <input type="checkbox" class="btn-check" id="size3" autocomplete="off">
+                            <label for="size3" class="btn btn btn-outline-orange me-2">M</label>
+                            <input type="checkbox" class="btn-check" id="size4" autocomplete="off">
+                            <label for="size4" class="btn btn btn-outline-orange me-2">L</label>
+                            <input type="checkbox" class="btn-check" id="size5" autocomplete="off">
+                            <label for="size5" class="btn btn btn-outline-orange me-2">XL</label>
+                        </div>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                    <div class="filter-category">
+                        <p class="filter-title">Category</p>
+                        <div class="d-flex flex-wrap justify-content-start">
+                            <input type="checkbox" class="btn-check" id="category1" autocomplete="off">
+                            <label for="category1" class="btn btn btn-outline-orange me-2">All</label>
+                            <input type="checkbox" class="btn-check" id="category2" autocomplete="off">
+                            <label for="category2" class="btn btn btn-outline-orange me-2">Women</label>
+                            <input type="checkbox" class="btn-check" id="category3" autocomplete="off">
+                            <label for="category3" class="btn btn btn-outline-orange me-2">Men</label>
+                            <input type="checkbox" class="btn-check" id="category4" autocomplete="off">
+                            <label for="category4" class="btn btn btn-outline-orange me-2">Boys</label>
+                            <input type="checkbox" class="btn-check" id="category5" autocomplete="off">
+                            <label for="category5" class="btn btn btn-outline-orange me-2">Girls</label>
+                        </div>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                    <div class="filter-brand">
+                        <p class="filter-title">Brand</p>
+                        <select name="brand" id="brand" class="form-select">
+                            <option value="adidas">adidas Originals, Jack & Jones, s.Oliver</option>
+                            <option value="adidas">adidas Originals, Jack & Jones, s.Oliver</option>
+                        </select>
+                    </div>
+                    <hr class="mx-n3 divider-filter">
+                </div>
+                <div class="modal-footer justify-content-around m-0">
+                    <button type="button" class="btn btn-sm btn-outline-orange rounded-pill w-40"
+                        data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-sm btn-outline-orange rounded-pill w-40">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal filter -->
+    <script src="../asset/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        $(document).on("click", ".sidebar-toggler", function () {
+            $(".sidebar").toggleClass("sidebar-active")
+            $(".main-panel").toggleClass("w-100")
+        })
+    </script>
+</body>
+
+</html>
