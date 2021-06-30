@@ -31,17 +31,30 @@ body {
     color: #222222;
 }
 
+.text-black-38px {
+    font-size: 38px;
+    color: #222222;
+}
+
 .font-semi-bold {
     font-weight: bolder;
 }
 
 .w-40 {
-    width: 40%;
-}
-.w-30 {
-    width: 30%;
+    width: 40% !important;
 }
 
+.w-30 {
+    width: 30% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.mt-10{
+    margin-top: 5.5rem;
+}
 .mt-4_5 {
     margin-top: 1.8rem;
 }
@@ -50,7 +63,7 @@ body {
     min-height: 50vh;
 }
 
-.h-min-60vh{
+.h-min-60vh {
     min-height: 60vh;
 }
 
@@ -239,7 +252,7 @@ body {
     color: black;
 }
 
-.card-product-title:hover{
+.card-product-title:hover {
     color: black;
 }
 
@@ -262,19 +275,93 @@ body {
 
 
 /* tab  */
-.nav-tabs > .nav-tab-orange.active {
+.nav-tabs>.nav-tab-orange.active {
     color: #DB3022;
     border: none;
     border-bottom: 3px solid #DB3022;
 }
 
-.nav-tabs > .nav-tab-orange {
+.nav-tabs>.nav-tab-orange {
     color: #9B9B9B;
     border: none;
     border-bottom: 1px solid #dee2e6;
-    
+
 }
 
-.nav-tabs > .nav-tab-orange:focus,.nav-tab-orange:hover {
+.nav-tabs>.nav-tab-orange:focus,
+.nav-tab-orange:hover {
     color: #DB3022;
 }
+
+/* tab  */
+
+/* Carousel button */
+.carousel-btn-next {
+    position: absolute;
+    left: 94%;
+    top: -90px;
+    height: 30px;
+    width: 30px;
+    background: white !important;
+    border-radius: 50% !important;
+}
+
+.carousel-btn-prev {
+    position: absolute;
+    right: 94%;
+    top: -90px;
+    height: 30px;
+    width: 30px;
+    background: white !important;
+    border-radius: 50% !important;
+}
+
+.carousel-btn-next>span,
+.carousel-btn-prev>span {
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+@media (min-width: 576px) {
+    .carousel-btn-prev {
+        right: 96%;
+        top: -95px;
+    }
+
+    .carousel-btn-next {
+        left: 96%;
+        top: -95px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-btn-prev {
+        right: 97.5%;
+        top: -95px;
+    }
+
+    .carousel-btn-next {
+        left: 97.5%;
+        top: -95px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-btn-prev {
+        right: 98%;
+        top: -110px;
+    }
+
+    .carousel-btn-next {
+        left: 98%;
+        top: -110px;
+    }
+}
+/* Carousel button */
+
+/* card carousel category */
+.card-category {
+    width: 206px;
+    height: 220px;
+}
+/* card carousel category */
