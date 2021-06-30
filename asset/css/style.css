@@ -27,17 +27,55 @@ body {
 }
 
 .text-black-24px {
-    font-size: 24px;
+    /* cutfont 20% */
+    font-size: 19.2px;
     color: #222222;
 }
 
 .text-black-38px {
-    font-size: 38px;
+    /* cutfont 30% */
+    font-size: 26.6px;
     color: #222222;
 }
 
 .font-semi-bold {
     font-weight: bolder;
+}
+
+@media (min-width: 576px) {
+
+    /*cut font size sebesar 25% untuk font size di atas 30px */
+    .text-black-38px {
+        font-size: 28.5px;
+    }
+
+    /* 15% */
+    .text-black-24px {
+        font-size: 20.4px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* cut font size sebesar 20% untuk font size di atas 30px */
+    .text-black-38px {
+        font-size: 30.4px;
+    }
+
+    /* 10% */
+    .text-black-24px {
+        font-size: 21.6px;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-black-38px {
+        font-size: 38px;
+    }
+
+    .text-black-24px {
+        font-size: 24px;
+    }
 }
 
 .w-40 {
@@ -234,8 +272,9 @@ body {
 /* Custom flex item */
 
 .header-product {
+    /* mobile cut font size sebesar 30% untuk font size di atas 30px */
     font-weight: bold;
-    font-size: 34px;
+    font-size: 23.8px;
     color: black;
     margin-left: 10px;
 }
@@ -272,6 +311,28 @@ body {
     justify-content: start;
     display: flex;
     list-style-type: none;
+}
+
+@media (min-width: 576px) {
+
+    /*cut font size sebesar 25% untuk font size di atas 30px */
+    .header-product {
+        font-size: 25.5px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* cut font size sebesar 20% untuk font size di atas 30px */
+    .header-product {
+        font-size: 27.2px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-product {
+        font-size: 34px;
+    }
 }
 
 
@@ -325,7 +386,7 @@ body {
     border-radius: 50% !important;
 }
 
-.carousel-trend-btn-prev{
+.carousel-trend-btn-prev {
     right: 94%;
     top: -90px;
 }
@@ -333,6 +394,12 @@ body {
 .carousel-category-btn-prev {
     right: 94%;
     top: -140px;
+}
+
+.carousel-trend-text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -356,6 +423,10 @@ body {
         left: 96%;
         top: -140px;
     }
+
+    .carousel-trend-text{
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -378,6 +449,9 @@ body {
         left: 97%;
         top: -140px;
     }
+    .carousel-trend-text {
+        font-size: 34px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -399,6 +473,10 @@ body {
     .carousel-category-btn-next {
         left: 98%;
         top: -140px;
+    }
+
+    .carousel-trend-text {
+        font-size: 38px;
     }
 }
 
