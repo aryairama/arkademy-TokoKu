@@ -46,6 +46,14 @@ body {
     margin-top: 1.8rem;
 }
 
+.h-min-50vh {
+    min-height: 50vh;
+}
+
+.h-min-60vh{
+    min-height: 60vh;
+}
+
 /* Home/index */
 .text-logo-ecommerce {
     font-size: 20px;
@@ -253,4 +261,20 @@ body {
 }
 
 
-/* Modal Filter */
+/* tab  */
+.nav-tabs > .nav-tab-orange.active {
+    color: #DB3022;
+    border: none;
+    border-bottom: 3px solid #DB3022;
+}
+
+.nav-tabs > .nav-tab-orange {
+    color: #9B9B9B;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    
+}
+
+.nav-tabs > .nav-tab-orange:focus,.nav-tab-orange:hover {
+    color: #DB3022;
+}
