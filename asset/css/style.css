@@ -52,9 +52,10 @@ body {
     width: 60% !important;
 }
 
-.mt-10{
+.mt-10 {
     margin-top: 5.5rem;
 }
+
 .mt-4_5 {
     margin-top: 1.8rem;
 }
@@ -296,67 +297,111 @@ body {
 /* tab  */
 
 /* Carousel button */
-.carousel-btn-next {
+.carousel-trend-btn-next,
+.carousel-category-btn-next {
     position: absolute;
+    height: 30px;
+    width: 30px;
+    background: white !important;
+    border-radius: 50% !important;
+}
+
+.carousel-trend-btn-next {
     left: 94%;
     top: -90px;
+}
+
+.carousel-category-btn-next {
+    left: 94%;
+    top: -140px;
+}
+
+.carousel-trend-btn-prev,
+.carousel-category-btn-prev {
+    position: absolute;
     height: 30px;
     width: 30px;
     background: white !important;
     border-radius: 50% !important;
 }
 
-.carousel-btn-prev {
-    position: absolute;
+.carousel-trend-btn-prev{
     right: 94%;
     top: -90px;
-    height: 30px;
-    width: 30px;
-    background: white !important;
-    border-radius: 50% !important;
 }
 
-.carousel-btn-next>span,
-.carousel-btn-prev>span {
-    font-size: 15px;
-    color: grey;
-    font-weight: bold;
+.carousel-category-btn-prev {
+    right: 94%;
+    top: -140px;
 }
+
+
 @media (min-width: 576px) {
-    .carousel-btn-prev {
+    .carousel-trend-btn-prev {
         right: 96%;
         top: -95px;
     }
 
-    .carousel-btn-next {
+    .carousel-trend-btn-next {
         left: 96%;
         top: -95px;
+    }
+
+    .carousel-category-btn-prev {
+        right: 96%;
+        top: -140px;
+    }
+
+    .carousel-category-btn-next {
+        left: 96%;
+        top: -140px;
     }
 }
 
 @media (min-width: 768px) {
-    .carousel-btn-prev {
+    .carousel-trend-btn-prev {
         right: 97.5%;
         top: -95px;
     }
 
-    .carousel-btn-next {
+    .carousel-trend-btn-next {
         left: 97.5%;
         top: -95px;
+    }
+
+    .carousel-category-btn-prev {
+        right: 97%;
+        top: -140px;
+    }
+
+    .carousel-category-btn-next {
+        left: 97%;
+        top: -140px;
     }
 }
 
 @media (min-width: 992px) {
-    .carousel-btn-prev {
+    .carousel-trend-btn-prev {
         right: 98%;
         top: -110px;
     }
 
-    .carousel-btn-next {
+    .carousel-trend-btn-next {
         left: 98%;
         top: -110px;
     }
+
+    .carousel-category-btn-prev {
+        right: 98%;
+        top: -140px;
+    }
+
+    .carousel-category-btn-next {
+        left: 98%;
+        top: -140px;
+    }
 }
+
 /* Carousel button */
 
 /* card carousel category */
