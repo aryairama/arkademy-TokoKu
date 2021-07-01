@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TokoKu - Product</title>
+    <title>TokoKu - Category T-Shirt</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="../asset/css/bootstrap.css">
     <link rel="stylesheet" href="../asset/css/style.css">
     <link rel="stylesheet" href="../asset/css/modalFilter.css">
-    <link rel="stylesheet" href="../asset/css/product.css">
 </head>
 
 <body>
@@ -41,23 +40,22 @@
                                 <button class="btn-filter ms-md-0 ms-n3" data-bs-target="#filter-prouct"
                                     data-bs-toggle="modal"><img src="../asset/img/icon/filter.svg"
                                         alt="icon-filter"></button>
-                                <a href="./myBag.html" class="btn-icon d-md-none d-block"><img
-                                        src="../asset/img/icon/keranjang.svg" alt="icon-chart"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-12">
-                        <div class="row flex-grow-1 gx-0">
-                            <div class="offset-4 col-2 d-none d-md-block">
-                                <a href="./myBag.html" class="btn-icon ms-lg-4">
-                                    <img src="../asset/img/icon/keranjang.svg" alt="">
+                        <div class="row flex-grow-1 flex-wrap">
+                            <div
+                                class="offset-md-2 col-10 d-flex justify-content-md-end justify-content-start align-items-center">
+                                <a href="./myBag.html" class="btn-icon mx-3">
+                                    <img src="../asset/img/icon/keranjang.svg" alt="icon-chart">
                                 </a>
-                            </div>
-                            <div class="col-md-6 col-8 d-flex">
-                                <a href="../auth/login.html"
-                                    class="btn btn-sm btn-orange rounded-pill w-50 me-3">Login</a>
-                                <a href="../auth/register.html"
-                                    class="btn btn-sm button-auth rounded-pill w-50">Signup</a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/lonceng.svg"
+                                        alt="icon-bell"></a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/mail.svg"
+                                        alt="icon-mail"></a>
+                                <a href="./profile.html" class="mx-3"><img class="rounded-circle"
+                                        src="../asset/img/profile/1.png" alt="icon-profile"></a>
                             </div>
                         </div>
                     </div>
@@ -65,9 +63,7 @@
             </div>
         </div>
     </nav>
-    <!-- Breadcrumb -->
-    <!-- Home  >  category  >  T-Shirt -->
-    <section class="container mt-10">
+    <section class="container mt-10 ps-4">
         <nav style="--bs-breadcrumb-divider: '>';">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item beadcrumb-text">Home</li>
@@ -76,232 +72,17 @@
             </ol>
         </nav>
     </section>
-    <!-- Breadcrumb -->
-    <!-- Product detail -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="product-gallery">
-                    <div class="big-product-gallery">
-                        <img class="img-fluid rounded-3 img-big-product-gallery"
-                            src="../asset/img/product_gallery/1.png" alt="">
-                    </div>
-                    <div class="small-product-gallery d-flex overflow-auto align-items-stretch mt-2">
-                        <img class="img-fluid rounded-3 img-small-product-gallery"
-                            src="../asset/img/product_gallery/1.png" alt="">
-                        <img class="img-fluid rounded-3 img-small-product-gallery"
-                            src="../asset/img/product_gallery/2.png" alt="">
-                        <img class="img-fluid rounded-3 img-small-product-gallery"
-                            src="../asset/img/product_gallery/3.png" alt="">
-                        <img class="img-fluid rounded-3 img-small-product-gallery"
-                            src="../asset/img/product_gallery/4.png" alt="">
-                        <img class="img-fluid rounded-3 img-small-product-gallery"
-                            src="../asset/img/product_gallery/5.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="product-detail mt-md-0 mt-4">
-                    <p class="product-title lh-1">Baju muslim Pria</p>
-                    <p class="product-brand lh-1">Zalora Cloth</p>
-                    <ul class="list-rating-product p-0 mt-n2">
-                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                        <li class="text-black-50">(10)</li>
-                    </ul>
-                    <p class="product-brand lh-1">Price</p>
-                    <p class="product-price lh-1 mt-n1">$ 20.0</p>
-                </div>
-                <div class="product-color">
-                    <div class="filter-colors lh-1">
-                        <p class="filter-title">Colors</p>
-                        <div class="d-flex flex-wrap justify-content-start">
-                            <input type="checkbox" class="btn-check" id="color1" autocomplete="off">
-                            <label for="color1" class="btn btn-outline-rounded-black me-2"></label>
-                            <input type="checkbox" class="btn-check" id="color2" autocomplete="off">
-                            <label for="color2" class="btn btn-outline-rounded-red me-2"></label>
-                            <input type="checkbox" class="btn-check" id="color3" autocomplete="off">
-                            <label for="color3" class="btn btn-outline-rounded-light-blue me-2"></label>
-                            <input type="checkbox" class="btn-check" id="color4" autocomplete="off">
-                            <label for="color4" class="btn btn-outline-rounded-light-green me-2"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-size-and-quantity mt-4">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                            <p class="filter-title lh-1">Size</p>
-                            <button class="btn-decrement-product"
-                                onclick="document.querySelector('#size1').stepDown()">&#9866;</button>
-                            <input type="number" class="form-control-quantity" min="0" readonly id="size1" value="1">
-                            <button class="btn-increment-product"
-                                onclick="document.querySelector('#size1').stepUp()">+</button>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                            <p class="filter-title lh-1">Quantity</p>
-                            <button class="btn-decrement-product"
-                                onclick="document.querySelector('#quantity1').stepDown()">&#9866;</button>
-                            <input type="number" class="form-control-quantity" min="0" readonly id="quantity1"
-                                value="1">
-                            <button class="btn-increment-product"
-                                onclick="document.querySelector('#quantity1').stepUp()">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-button-action d-flex  justify-content-around mt-lg-5 mt-4">
-                    <button class="btn btn-sm btn-outline-orange rounded-pill w-25 py-md-2">Chat</button>
-                    <button class="btn btn-sm btn-outline-orange rounded-pill w-25 py-md-2">Add bag</button>
-                    <button class="btn btn-sm btn-orange rounded-pill w-40 py-md-2">Buy Now</button>
-                </div>
-            </div>
-            <div class="col-md-12 mt-5">
-                <div class="produk-information">
-                    <p class="product-information-title">Informasi Produk</p>
-                    <p class="product-information-condition ">Condition</p>
-                    <p class="product-information-condition text-orange mt-n3">New</p>
-                    <p class="product-information-description mt-5">Description</p>
-                    <p class="product-information-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. <br><br>
-                        Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor.
-                        Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent
-                        sed enim
-                        vel turpis blandit imperdiet ac ac felis. Etiam tincidunt tristique placerat. Pellentesque a
-                        consequat mauris, vel suscipit ipsum.
-                        Donec ac mauris vitae diam commodo vehicula. Donec quam elit, sollicitudin eu nisl at, ornare
-                        suscipit magna. <br><br>
-                        Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor.
-                        Fusce
-                        nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed
-                        enim
-                        vel turpis blandit imperdiet ac ac felis.<br><br>
-                        In ultricies rutrum tempus. Mauris vel molestie orci.
-                    </p>
-                </div>
-                <div class="produk-information-rating">
-                    <p class="product-information-title mt-5">Product review</p>
-                    <div class="product-rating row">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                            <div class="all-ratings">
-                                <div class="text-rating-primary">5.0<div class="text-rating-secondary d-inline-block">
-                                        /10
-                                    </div>
-                                </div>
-                                <div class="all-star">
-                                    <ul class="list-rating-product p-0 mt-n2">
-                                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                        <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 ms-lg-n5 col-md-6 col-sm-6 col-6">
-                            <div class="every-star d-flex flex-column ms-md-5">
-                                <div class="five-star d-flex p-1 align-items-center">
-                                    <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">5</p>
-                                    <div class="rating-bar-orange"></div>
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">4</p>
-                                </div>
-                                <div class="four-star d-flex p-1 align-items-center">
-                                    <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">4</p>
-                                    <div class="rating-bar-transparant"></div>
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                                </div>
-                                <div class="three-star d-flex p-1 align-items-center">
-                                    <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">3</p>
-                                    <div class="rating-bar-transparant"></div>
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                                </div>
-                                <div class="two-star d-flex p-1 align-items-center">
-                                    <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">2</p>
-                                    <div class="rating-bar-transparant"></div>
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                                </div>
-                                <div class="one-star d-flex p-1 align-items-center">
-                                    <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">1</p>
-                                    <div class="rating-bar-transparant"></div>
-                                    <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="product-rating d-flex flex-wrap">
-                        <div class="all-ratings">
-                            <div class="text-rating-primary">5.0<div class="text-rating-secondary d-inline-block">/10
-                                </div>
-                            </div>
-                            <div class="all-star">
-                                <ul class="list-rating-product p-0 mt-n2">
-                                    <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                    <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                    <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                    <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                    <li class="pe-1"><img src="../asset/img/icon/Star.svg" alt="icon-rating"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="every-star d-flex flex-column ms-5">
-                            <div class="five-star w-50 d-flex p-1 align-items-center">
-                                <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">5</p>
-                                <div class="rating-bar-orange"></div>
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">4</p>
-                            </div>
-                            <div class="four-star w-50 d-flex p-1 align-items-center">
-                                <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">4</p>
-                                <div class="rating-bar-transparant"></div>
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                            </div>
-                            <div class="three-star w-50 d-flex p-1 align-items-center">
-                                <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">3</p>
-                                <div class="rating-bar-transparant"></div>
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                            </div>
-                            <div class="two-star w-50 d-flex p-1 align-items-center">
-                                <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">2</p>
-                                <div class="rating-bar-transparant"></div>
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                            </div>
-                            <div class="one-star w-50 d-flex p-1 align-items-center">
-                                <img src="../asset/img/icon/Star.svg" alt="icon-rating">
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">1</p>
-                                <div class="rating-bar-transparant"></div>
-                                <p class=" lh-1 my-0 mx-2 text-count-rating">0</p>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <hr class="divider-filter">
-    </section>
-    <!-- Product detail -->
-    <!-- Product relevan -->
-    <section class="container mt-5">
+    <!-- T-Shirt -->
+    <section class="container mt-3">
         <div class="row">
             <div class="col-12">
-                <p class="header-product">You can also like this</p>
-                <p class="header-product-text mt-n4">You’ve never seen it before!</p>
+                <p class="header-product">T-Shirt</p>
             </div>
         </div>
         <div class="d-flex flex-wrap justify-content-sm-around justify-content-center">
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -319,8 +100,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -338,8 +118,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -357,8 +136,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -376,8 +154,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -395,8 +172,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -414,8 +190,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -433,8 +208,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -452,8 +226,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -471,8 +244,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -490,8 +262,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -509,8 +280,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -529,8 +299,7 @@
 
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -548,8 +317,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -567,8 +335,7 @@
             </div>
             <div class="flex-item">
                 <div class="card">
-                    <img class="img-fluid" src="../asset/img/product/1.jpg"
-                        alt="">
+                    <img class="img-fluid" src="../asset/img/product/1.jpg" alt="">
                     <div class="card-body">
                         <a href="./product.html" class="card-product-title stretched-link">Men's formal suit -
                             Black & White</a>
@@ -586,7 +353,7 @@
             </div>
         </div>
     </section>
-    <!-- Product relevan -->
+    <!-- T-Shirt -->
     <!-- Modal filter -->
     <div class="modal fade" id="filter-prouct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -668,7 +435,6 @@
     <!-- Modal filter -->
     <script src="../asset/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="../asset/js/product.js"></script>
 </body>
 
 </html>

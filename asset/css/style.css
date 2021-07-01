@@ -488,3 +488,9 @@ body {
     height: 220px;
 }
 /* card carousel category */
+/* Breadcrumb */
+.beadcrumb-text {
+    font-size: 14px;
+    color: #9B9B9B;
+}
+/* Breadcrumb */
