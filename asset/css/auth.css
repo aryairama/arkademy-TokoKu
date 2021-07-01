@@ -35,6 +35,11 @@
     text-decoration: none;
 }
 
+.text-forgot-password:hover,
+.text-register:hover {
+    color: #DB3022;
+}
+
 .btn-submit {
     background-color: #DB3022;
     color: white;
@@ -44,4 +49,9 @@
     color: #DB3022;
     background-color: transparent;
     border: 1px solid #DB3022;
+}
+
+#passwordConfirmation > .modal-dialog > .modal-content {
+    border-bottom: 22px solid #DF4538;
+    border-radius: 20px;
 }
