@@ -19,10 +19,10 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow fixed-top">
         <div class="container">
-            <div class="navbar-brand d-flex">
+            <a href="../index.html" class="navbar-brand d-flex">
                 <img class="brand-ecommerce" src="../asset/img/icon/Vector.svg" alt="logo-app">
                 <p class="text-logo-ecommerce mb-n5 pt-2 ps-1">TokoKu</p>
-            </div>
+            </a>
             <button class="navbar-toggler btn-sm btn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbar-ecommerce" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -397,15 +397,7 @@
     </div>
     <!-- Modal filter -->
     <script src="../asset/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script>
-        const modalAddNewAddress = new bootstrap.Modal($("#add-new-address"))
-        const modalChooseAnotheAddress = new bootstrap.Modal($("#choose-another-address"))
-        $(".add-new-address").on("click", function () {
-            modalAddNewAddress.show()
-            modalChooseAnotheAddress.hide()
-        })
-    </script>
+    <script type="module" src="../asset/js/script.js"></script>
 </body>
 
 </html>

@@ -107,7 +107,8 @@
 
 .main-panel {
     flex-shrink: 0;
-    padding-top: 61px;
+    /* padding-top: 61px; */
+    padding-top: 109px;
     display: block;
     box-sizing: border-box;
     width: 100%;

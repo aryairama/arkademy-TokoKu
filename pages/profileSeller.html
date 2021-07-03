@@ -99,82 +99,100 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./address.html" class="d-flex align-items-center text-black-50">
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse2">
+                        <label for="sidebar-collapse2" class="d-flex align-items-center text-black-50">
                             <div class="sidebar-menu-icon-background bg-dark-orange">
-                                <img class="sidebar-menu-icon" src="../asset/img/icon/map.svg" alt="">
-                            </div> Shipping Adrress
-                        </a>
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/package.svg" alt="">
+                            </div>Product
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="./myProducts.html" class="text-black-50">My Products</a>
+                            </li>
+                            <li>
+                                <a href="./sellingProducts.html" class="text-black-50">Selling products</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="./myOrder.html" class="d-flex align-items-center text-black-50">
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse3">
+                        <label for="sidebar-collapse3" class="d-flex align-items-center text-black-50">
                             <div class="sidebar-menu-icon-background bg-pink">
-                                <img class="sidebar-menu-icon" src="../asset/img/icon/clipboard.svg" alt="">
-                            </div> My Order
-                        </a>
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/shopping_cart_.svg" alt="">
+                            </div> Order
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="./myOrderSeller.html" class="text-black-50">My order</a>
+                            </li>
+                            <li>
+                                <a href="./orderCancel.html" class="text-black-50">Order cancel</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </aside>
         <div class="main-panel">
-            <div id="main-content" class="pt-5 ">
-                <section class="container mb-5">
-                    <div class="card rounded-3 shadow">
-                        <div class="card-body">
-                            <div class="text-black-20px fw-bold">My Profile</div>
-                            <div class="text-black-14px text-black-50">Manage your profile information</div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-lg-8 col-md-12 col-12 order-lg-0 order-1">
-                                    <div class="row mb-3">
-                                        <label for="name" class="col-sm-3 col-form-label text-black-50">Name
-                                            Store</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="name" name="name"
-                                                value="Johanes Mikael">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="email" class="col-sm-3 col-form-label text-black-50">email</label>
-                                        <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="email" name="email"
-                                                value="johanes@gmail.com">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="phone_number" class="col-sm-3 col-form-label text-black-50">Phone
-                                            number</label>
-                                        <div class="col-sm-9">
-                                            <input type="number" class="form-control" id="phone_number"
-                                                name="phone_number" value="08901289012">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="phone_number" class="col-sm-3 col-form-label text-black-50">Store
-                                            description</label>
-                                        <div class="col-sm-9">
-                                            <textarea class="form-control" name="store_description"
-                                                id="store_description" cols="30" rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3 mt-5">
-                                        <div class="offset-3 col-9"><button type="submit"
-                                                class="btn btn-orange rounded-pill px-5">Save</button></div>
+            <section class="container mb-5">
+                <div class="card rounded-3 shadow">
+                    <div class="card-body">
+                        <div class="text-black-20px fw-bold">My Profile</div>
+                        <div class="text-black-14px text-black-50">Manage your profile information</div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 col-12 order-lg-0 order-1">
+                                <div class="row mb-3">
+                                    <label for="name" class="col-sm-3 col-form-label text-black-50">Name
+                                        Store</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            value="Johanes Mikael">
                                     </div>
                                 </div>
-                                <div
-                                    class="col-lg-4 col-md-12 col-12 order-lg-0 order-0 d-flex flex-wrap justify-content-evenly">
-                                    <hr class="d-lg-block d-none" width="1" size="150">
-                                    <div class="d-flex flex-wrap flex-column align-items-center pb-3">
-                                        <img class=" rounded-circle" src="../asset/img/profile/current_profile.png"
-                                            width="110px" height="110px" alt="current-profile">
-                                        <button class="btn btn-outline-orange rounded-pill mt-2">Select image</button>
+                                <div class="row mb-3">
+                                    <label for="email" class="col-sm-3 col-form-label text-black-50">email</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            value="johanes@gmail.com">
                                     </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="phone_number" class="col-sm-3 col-form-label text-black-50">Phone
+                                        number</label>
+                                    <div class="col-sm-9">
+                                        <input type="number" class="form-control" id="phone_number"
+                                            name="phone_number" value="08901289012">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="phone_number" class="col-sm-3 col-form-label text-black-50">Store
+                                        description</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control" name="store_description"
+                                            id="store_description" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 mt-5">
+                                    <div class="offset-3 col-9"><button type="submit"
+                                            class="btn btn-orange rounded-pill px-5">Save</button></div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 col-md-12 col-12 order-lg-0 order-0 d-flex flex-wrap justify-content-evenly">
+                                <hr class="d-lg-block d-none" width="1" size="150">
+                                <div class="d-flex flex-wrap flex-column align-items-center pb-3">
+                                    <img class=" rounded-circle" src="../asset/img/profile/current_profile.png"
+                                        width="110px" height="110px" alt="current-profile">
+                                    <button class="btn btn-outline-orange rounded-pill mt-2">Select image</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- main content -->
@@ -258,13 +276,7 @@
     </div>
     <!-- Modal filter -->
     <script src="../asset/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script>
-        $(document).on("click", ".sidebar-toggler", function () {
-            $(".sidebar").toggleClass("sidebar-active")
-            $(".main-panel").toggleClass("w-100")
-        })
-    </script>
+    <script type="module" src="../asset/js/script.js"></script>
 </body>
 
 </html>

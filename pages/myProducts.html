@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Arya Irama Wahono">
-    <meta name="description" content="Situs jual beli online terlengkap dengan berbagai pilihan. Belanja online mudah dan menyenangkan di TokoKu. Pengiriman cepat."">
-    <meta name="keywords" content="TokoKu, Toko-Ku, Tokopedia, Shoope, Lazada, Online Shop, Baju, Celana, Anting, Sepatu">
+    <meta name="description"
+        content="Situs jual beli online terlengkap dengan berbagai pilihan. Belanja online mudah dan menyenangkan di TokoKu. Pengiriman cepat."">
+    <meta name=" keywords"
+        content="TokoKu, Toko-Ku, Tokopedia, Shoope, Lazada, Online Shop, Baju, Celana, Anting, Sepatu">
     <link rel="shortcut icon" href="../asset/img/icon/Vector.svg" type="image/x-icon">
     <title>TokoKu - Profile</title>
     <link rel="stylesheet" href="../asset/css/bootstrap.css">
@@ -88,28 +90,49 @@
                         <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse1">
                         <label for="sidebar-collapse1" class="d-flex align-items-center text-black-50">
                             <div class="sidebar-menu-icon-background bg-light-blue">
-                                <img class="sidebar-menu-icon" src="../asset/img/icon/user.svg" alt="">
-                            </div> My account
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/home.svg" alt="">
+                            </div>Store
+                            <span class="arrow-menu ms-auto">
                         </label>
                         <ul class="sidebar-submenu" id="submenu1">
                             <li>
-                                <a href="./profile.html" class="text-black-50">Profile</a>
+                                <a href="./profileSeller.html" class="text-black-50">Store profile</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="./address.html" class="d-flex align-items-center text-black-50">
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse2">
+                        <label for="sidebar-collapse2" class="d-flex align-items-center">
                             <div class="sidebar-menu-icon-background bg-dark-orange">
-                                <img class="sidebar-menu-icon" src="../asset/img/icon/map.svg" alt="">
-                            </div> Shipping Adrress
-                        </a>
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/package.svg" alt="">
+                            </div>Product
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="./myProducts.html">My Products</a>
+                            </li>
+                            <li>
+                                <a href="./sellingProducts.html" class="text-black-50">Selling products</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="./myOrder.html" class="d-flex align-items-center">
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse3">
+                        <label for="sidebar-collapse3" class="d-flex align-items-center text-black-50">
                             <div class="sidebar-menu-icon-background bg-pink">
-                                <img class="sidebar-menu-icon" src="../asset/img/icon/clipboard.svg" alt="">
-                            </div> My Order
-                        </a>
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/shopping_cart_.svg" alt="">
+                            </div> Order
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="./myOrderSeller.html" class="text-black-50">My order</a>
+                            </li>
+                            <li>
+                                <a href="./orderCancel.html" class="text-black-50">Order cancel</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -118,47 +141,132 @@
             <section class="container mb-5">
                 <div class="card rounded-3 shadow">
                     <div class="card-body">
-                        <div class="text-black-20px fw-bold">My order</div>
+                        <div class="text-black-20px fw-bold">My product</div>
                         <div class="row">
                             <div class="col-12">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link nav-tab-orange active" id="all_items"
+                                        <button class="nav-link nav-tab-orange active ps-0" id="all_items"
                                             data-bs-toggle="tab" data-bs-target="#tab_all_items" type="button"
                                             role="tab" aria-controls="nav-home" aria-selected="true">All
                                             items</button>
-                                        <button class="nav-link nav-tab-orange" id="not_yet_paid"
-                                            data-bs-toggle="tab" data-bs-target="#tab_not_yet_paid" type="button"
-                                            role="tab" aria-controls="nav-profile" aria-selected="false">Not yet
-                                            paid</button>
-                                        <button class="nav-link nav-tab-orange" id="packed" data-bs-toggle="tab"
-                                            data-bs-target="#tab_packed" type="button" role="tab"
-                                            aria-controls="nav-contact" aria-selected="false">Packed</button>
-                                        <button class="nav-link nav-tab-orange" id="sent" data-bs-toggle="tab"
-                                            data-bs-target="#tab_sent" type="button" role="tab"
-                                            aria-controls="nav-contact" aria-selected="false">Sent</button>
-                                        <button class="nav-link nav-tab-orange" id="completed" data-bs-toggle="tab"
-                                            data-bs-target="#tab_completed" type="button" role="tab"
-                                            aria-controls="nav-contact" aria-selected="false">Completed</button>
-                                        <button class="nav-link nav-tab-orange" id="order_cancel"
-                                            data-bs-toggle="tab" data-bs-target="#tab_order_cancel" type="button"
-                                            role="tab" aria-controls="nav-contact" aria-selected="false">Order
-                                            cancel</button>
+                                        <button class="nav-link nav-tab-orange" id="sold_out" data-bs-toggle="tab"
+                                            data-bs-target="#tab_sold_out" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false">Sold out</button>
+                                        <button class="nav-link nav-tab-orange" id="archived" data-bs-toggle="tab"
+                                            data-bs-target="#tab_archived" type="button" role="tab"
+                                            aria-controls="nav-contact" aria-selected="false">Archived</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane h-min-60vh fade show active" id="tab_all_items"
-                                        role="tabpanel" aria-labelledby="nav-home-tab"></div>
-                                    <div class="tab-pane h-min-60vh fade" id="tab_not_yet_paid" role="tabpanel"
-                                        aria-labelledby="nav-profile-tab"></div>
-                                    <div class="tab-pane h-min-60vh fade" id="tab_packed" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab"></div>
-                                    <div class="tab-pane h-min-60vh fade" id="tab_sent" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab"></div>
-                                    <div class="tab-pane h-min-60vh fade" id="tab_completed" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab"></div>
-                                    <div class="tab-pane h-min-60vh fade" id="tab_order_cancel" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab"></div>
+                                    <div class="tab-pane h-min-60vh fade show active" id="tab_all_items" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm w-25">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="table-responsive-sm pt-3">
+                                                <table class="table table-secondary">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-black-50">Product name</th>
+                                                            <th class="text-black-50">Price</th>
+                                                            <th class="text-black-50">Stock</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                <div class="d-flex flex-column align-items-center py-5">
+                                                                    <img src="../asset/img/icon/undraw_opinion_dxp8_1.svg"
+                                                                        width="158px" height="123px" alt="">
+                                                                    <p class="text-black-16px text-black-50 pt-5">You
+                                                                        don't have a product yet</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_sold_out" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm w-25">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="table-responsive-sm pt-3">
+                                                <table class="table table-secondary">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-black-50">Product name</th>
+                                                            <th class="text-black-50">Price</th>
+                                                            <th class="text-black-50">Stock</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                <div class="d-flex flex-column align-items-center py-5">
+                                                                    <img src="../asset/img/icon/undraw_opinion_dxp8_1.svg"
+                                                                        width="158px" height="123px" alt="">
+                                                                    <p class="text-black-16px text-black-50 pt-5">
+                                                                        You don't have a product yet</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_archived" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm w-25">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="table-responsive-sm pt-3">
+                                                <table class="table table-secondary">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-black-50">Product name</th>
+                                                            <th class="text-black-50">Price</th>
+                                                            <th class="text-black-50">Stock</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                <div class="d-flex flex-column align-items-center py-5">
+                                                                    <img src="../asset/img/icon/undraw_opinion_dxp8_1.svg"
+                                                                        width="158px" height="123px" alt="">
+                                                                    <p class="text-black-16px text-black-50 pt-5">
+                                                                        You don't have a product yet</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
