@@ -549,3 +549,34 @@ body {
 .table>tbody>tr>td:last-child{
     border-radius: 0px 0px 5px 0px;
 }
+
+
+/* Input group */
+.input-group-myorder {
+    width: 60%;
+    padding-top: 1rem;
+}
+
+@media (min-width: 576px) {
+    .input-group-myorder {
+        width: 50%;
+    }
+}
+
+@media (min-width: 576px) {
+    .input-group-myorder {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+    .input-group-myorder {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px){
+    .input-group-myorder {
+        width: 25%;
+    }
+}

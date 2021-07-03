@@ -141,11 +141,11 @@
     }
     .sidebar {
         display: flex;
-        width: 30%;
+        width: 35%;
     }
 
     .sidebar-active {
-        width: 30%;
+        width: 35%;
         display: none !important;
     }
 

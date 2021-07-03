@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arya Irama Wahono">
+    <meta name="description"
+        content="Situs jual beli online terlengkap dengan berbagai pilihan. Belanja online mudah dan menyenangkan di TokoKu. Pengiriman cepat."">
+    <meta name=" keywords"
+        content="TokoKu, Toko-Ku, Tokopedia, Shoope, Lazada, Online Shop, Baju, Celana, Anting, Sepatu">
+    <link rel="shortcut icon" href="../asset/img/icon/Vector.svg" type="image/x-icon">
+    <title>TokoKu - My Order</title>
+    <link rel="stylesheet" href="../asset/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/modalFilter.css">
+    <link rel="stylesheet" href="../asset/css/profile.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border shadow-sm">
+        <div class="container">
+            <div class="navbar-brand d-flex justify-content-end center-logo-sidebar">
+                <a href="../index.html" class="text-logo-ecommerce mt-1">
+                    <img class="brand-ecommerce mt-n2" src="../asset/img/icon/Vector.svg" alt="logo-app">TokoKu
+                </a>
+            </div>
+            <button class="navbar-toggler border btn-sm btn  sidebar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler border btn-sm btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-ecommerce" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-ecommerce">
+                <div class="row flex-grow-1 mt-md-2 mt-4">
+                    <div class="offset-md-6 col-md-6 offset-lg-6 col-lg-6 col-12">
+                        <div class="row flex-grow-1 flex-wrap">
+                            <div
+                                class="offset-md-2 col-10 d-flex justify-content-md-end justify-content-start align-items-center">
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/lonceng.svg"
+                                        alt="icon-bell"></a>
+                                <a href="./myBag.html" class="btn-icon mx-3"><img src="../asset/img/icon/mail.svg"
+                                        alt="icon-mail"></a>
+                                <a href="#" class="mx-3"><img class="rounded-circle profile sidebar-toggler d-block"
+                                        src="../asset/img/profile/1.png" alt="icon-profile"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main content -->
+    <div class="d-flex wrapper flex-nowrap">
+        <aside class="sidebar ps-5 flex-column">
+            <div class="user-profile d-flex flex-wrap mb-5">
+                <img src="../asset/img/profile/1.png" class="user-profile-img" alt="user-profile-img">
+                <div class="d-flex flex-column ps-3 pt-1">
+                    <div class="text-black-16px font-semi-bold">Johanes Mikael</div>
+                    <div class="text-black-14px text-black-50"><img src="../asset/img/icon/pensil.svg" alt=""> Ubah
+                        profile</div>
+                </div>
+            </div>
+            <div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse1">
+                        <label for="sidebar-collapse1" class="d-flex align-items-center text-black-50">
+                            <div class="sidebar-menu-icon-background bg-light-blue">
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/home.svg" alt="">
+                            </div>Store
+                            <span class="arrow-menu ms-auto">
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu1">
+                            <li>
+                                <a href="./profileSeller.html" class="text-black-50">Store profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse2">
+                        <label for="sidebar-collapse2" class="d-flex align-items-center text-black-50">
+                            <div class="sidebar-menu-icon-background bg-dark-orange">
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/package.svg" alt="">
+                            </div>Product
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="./myProducts.html" class="text-black-50">My Products</a>
+                            </li>
+                            <li>
+                                <a href="./sellingProducts.html" class="text-black-50">Selling products</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="sidebar-collapse" id="sidebar-collapse3">
+                        <label for="sidebar-collapse3" class="d-flex align-items-center">
+                            <div class="sidebar-menu-icon-background bg-pink">
+                                <img class="sidebar-menu-icon" src="../asset/img/icon/shopping_cart_.svg" alt="">
+                            </div> Order
+                            <span class=" arrow-menu ms-auto"></span>
+                        </label>
+                        <ul class="sidebar-submenu" id="submenu2">
+                            <li>
+                                <a href="./myOrderSeller.html">My order</a>
+                            </li>
+                            <li>
+                                <a href="./orderCancel.html" class="text-black-50">Order cancel</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main-panel">
+            <section class="container mb-5">
+                <div class="card rounded-3 shadow">
+                    <div class="card-body">
+                        <div class="text-black-20px fw-bold">My order</div>
+                        <div class="row">
+                            <div class="col-12">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link nav-tab-orange active ps-0" id="all_items"
+                                            data-bs-toggle="tab" data-bs-target="#tab_all_items" type="button"
+                                            role="tab" aria-controls="nav-home" aria-selected="true">All
+                                            items</button>
+                                        <button class="nav-link nav-tab-orange" id="get_paid" data-bs-toggle="tab"
+                                            data-bs-target="#tab_get_paid" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false">Get paid</button>
+                                        <button class="nav-link nav-tab-orange" id="processed" data-bs-toggle="tab"
+                                            data-bs-target="#tab_processed" type="button" role="tab"
+                                            aria-controls="nav-contact" aria-selected="false">Processed</button>
+                                        <button class="nav-link nav-tab-orange" id="sent" data-bs-toggle="tab"
+                                            data-bs-target="#tab_sent" type="button" role="tab"
+                                            aria-controls="nav-contact" aria-selected="false">Sent</button>
+                                        <button class="nav-link nav-tab-orange" id="completed" data-bs-toggle="tab"
+                                            data-bs-target="#tab_completed" type="button" role="tab"
+                                            aria-controls="nav-contact" aria-selected="false">Completed</button>
+                                        <button class="nav-link nav-tab-orange" id="order_cancel" data-bs-toggle="tab"
+                                            data-bs-target="#tab_order_cancel" type="button" role="tab"
+                                            aria-controls="nav-contact" aria-selected="false">Order
+                                            cancel</button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane h-min-60vh fade show active" id="tab_all_items" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm input-group-myorder">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="data-notfound align-self-center mt-10">
+                                                <img src="../asset/img/icon/undraw_respond_8wjt_1.svg" width="165px"
+                                                    height="147px">
+                                            </div>
+                                            <p class="text-black-16px text-black-50 pt-5 text-center">You don't have a product yet</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_get_paid" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm input-group-myorder">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="data-notfound align-self-center mt-10">
+                                                <img src="../asset/img/icon/undraw_respond_8wjt_1.svg" width="165px"
+                                                    height="147px">
+                                            </div>
+                                            <p class="text-black-16px text-black-50 pt-5 text-center">You don't have a product yet</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_processed" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm input-group-myorder">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="data-notfound align-self-center mt-10">
+                                                <img src="../asset/img/icon/undraw_respond_8wjt_1.svg" width="165px"
+                                                    height="147px">
+                                            </div>
+                                            <p class="text-black-16px text-black-50 pt-5 text-center">You don't have a product yet</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_sent" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm input-group-myorder">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="data-notfound align-self-center mt-10">
+                                                <img src="../asset/img/icon/undraw_respond_8wjt_1.svg" width="165px"
+                                                    height="147px">
+                                            </div>
+                                            <p class="text-black-16px text-black-50 pt-5 text-center">You don't have a product yet</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_completed" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm input-group-myorder">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="data-notfound align-self-center mt-10">
+                                                <img src="../asset/img/icon/undraw_respond_8wjt_1.svg" width="165px"
+                                                    height="147px">
+                                            </div>
+                                            <p class="text-black-16px text-black-50 pt-5 text-center">You don't have a product yet</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane h-min-60vh fade" id="tab_order_cancel" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <div class="d-flex flex-column pt-3">
+                                            <div class="input-group input-group-sm input-group-myorder">
+                                                <button
+                                                    class="input-group-text border-grey bg-transparent rounded-pill-start border-end-0">
+                                                    <img src="../asset/img/icon/Search.svg" alt="icon-search"
+                                                        aria-label="button search">
+                                                </button>
+                                                <input type="text" class="form-control rounded-pill-end border-start-0">
+                                            </div>
+                                            <div class="data-notfound align-self-center mt-10">
+                                                <img src="../asset/img/icon/undraw_respond_8wjt_1.svg" width="165px"
+                                                    height="147px">
+                                            </div>
+                                            <p class="text-black-16px text-black-50 pt-5 text-center">You don't have a product yet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- main content -->
+    <script src="../asset/js/bootstrap.bundle.js"></script>
+    <script type="module" src="../asset/js/script.js"></script>
+</body>
+
+</html>
