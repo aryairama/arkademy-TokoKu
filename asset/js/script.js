@@ -1,5 +1,6 @@
 import "./jquery.min.js";
 import "./owl.carousel.min.js";
+import "https://cdn.tiny.cloud/1/ye3sivj2b6om6cs63viibjhwr9hkpy3j4wxc1zrjag2g2adv/tinymce/5/tinymce.min.js";
 // Carousel
 $("#carousel-trend").owlCarousel({
   nav: true,
@@ -75,7 +76,9 @@ $(document).on("click", ".sidebar-toggler", function () {
 if ($("#add-new-address").length > 0) {
   const modalAddNewAddress = new bootstrap.Modal($("#add-new-address"));
   if ($("#choose-another-address").length > 0) {
-    const modalChooseAnotheAddress = new bootstrap.Modal($("#choose-another-address"));
+    const modalChooseAnotheAddress = new bootstrap.Modal(
+      $("#choose-another-address")
+    );
     $(".add-new-address").on("click", function () {
       modalAddNewAddress.show();
       modalChooseAnotheAddress.hide();
@@ -87,13 +90,38 @@ if ($("#add-new-address").length > 0) {
 }
 //modal add new address
 // Product gallery
-$(".small-product-gallery").on("click", ".img-small-product-gallery", function () {
-    let clickImg = this
+$(".small-product-gallery").on(
+  "click",
+  ".img-small-product-gallery",
+  function () {
+    let clickImg = this;
     let targetImg = $(".img-big-product-gallery");
     targetImg.fadeOut("slow", () => {
-        $(".img-small-product-gallery-active").removeClass("img-small-product-gallery-active");
-        $(clickImg).addClass("img-small-product-gallery-active");
-        targetImg.attr("src", clickImg.getAttribute("src")).fadeIn("slow")
-    })
-});
+      $(".img-small-product-gallery-active").removeClass(
+        "img-small-product-gallery-active"
+      );
+      $(clickImg).addClass("img-small-product-gallery-active");
+      targetImg.attr("src", clickImg.getAttribute("src")).fadeIn("slow");
+    });
+  }
+);
 // Product gallery
+// text-editor
+tinymce.init({
+  selector: "#description",
+  height: 300,
+  menubar: false,
+  plugins: [
+    "advlist autolink lists link image charmap print preview anchor",
+    "searchreplace visualblocks code fullscreen",
+    "insertdatetime media table paste code help wordcount",
+  ],
+  toolbar:
+    "undo redo | formatselect | " +
+    "bold italic backcolor | alignleft aligncenter " +
+    "alignright alignjustify | bullist numlist outdent indent | " +
+    "removeformat | help",
+  content_style:
+    "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
+});
+// text-editor
