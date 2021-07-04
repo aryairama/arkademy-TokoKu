@@ -109,15 +109,15 @@ $(".small-product-gallery").on(
 // text-editor
 tinymce.init({
   selector: "#description",
-  height: 300,
-  menubar: false,
+  height: 400,
+  menubar: true,
   plugins: [
     "advlist autolink lists link image charmap print preview anchor",
     "searchreplace visualblocks code fullscreen",
     "insertdatetime media table paste code help wordcount",
   ],
   toolbar:
-    "undo redo | formatselect | " +
+    "undo redo | formatselect fontsizeselect forecolor| " +
     "bold italic backcolor | alignleft aligncenter " +
     "alignright alignjustify | bullist numlist outdent indent | " +
     "removeformat | help",
