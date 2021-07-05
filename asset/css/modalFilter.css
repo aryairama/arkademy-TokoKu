@@ -11,14 +11,13 @@
 .btn-check:active+.btn-outline-rounded-black,
 .btn-outline-rounded-black:active,
 .btn-outline-rounded-black.active {
-    box-shadow: none;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-black:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-black {
@@ -33,14 +32,13 @@
 .btn-check:active+.btn-outline-rounded-white,
 .btn-outline-rounded-white:active,
 .btn-outline-rounded-white.active {
-    box-shadow: none;
+    box-shadow:0 0 0 0px black, 0 0 0 2px #DB3022 !important;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
 }
 
 .btn-outline-rounded-white:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px black, 0 0 0 2px #DB3022 !important;
 }
 
 .btn-outline-rounded-white {
@@ -55,14 +53,13 @@
 .btn-check:active+.btn-outline-rounded-red,
 .btn-outline-rounded-red:active,
 .btn-outline-rounded-red.active {
-    box-shadow: none;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-red:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-red {
@@ -77,14 +74,13 @@
 .btn-check:active+.btn-outline-rounded-pink,
 .btn-outline-rounded-pink:active,
 .btn-outline-rounded-pink.active {
-    box-shadow: none;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-pink:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-pink {
@@ -99,14 +95,13 @@
 .btn-check:active+.btn-outline-rounded-brown,
 .btn-outline-rounded-brown:active,
 .btn-outline-rounded-brown.active {
-    box-shadow: none;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
 }
 
 .btn-outline-rounded-brown:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-brown {
@@ -121,14 +116,13 @@
 .btn-check:active+.btn-outline-rounded-blue,
 .btn-outline-rounded-blue:active,
 .btn-outline-rounded-blue.active {
-    box-shadow: none;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
 }
 
 .btn-outline-rounded-blue:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-blue {
@@ -143,14 +137,13 @@
 .btn-check:active+.btn-outline-rounded-light-blue,
 .btn-outline-rounded-light-blue:active,
 .btn-outline-rounded-light-blue.active {
-    box-shadow: none;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-light-blue:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-light-blue {
@@ -165,14 +158,13 @@
 .btn-check:active+.btn-outline-rounded-light-green,
 .btn-outline-rounded-light-green:active,
 .btn-outline-rounded-light-green.active {
-    box-shadow: none;
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-light-green:hover {
     border: 4px solid white;
-    outline: 1px solid #DB3022;
+    box-shadow:0 0 0 0px white, 0 0 0 2px #DB3022;
 }
 
 .btn-outline-rounded-light-green {
